@@ -1,0 +1,13 @@
+# Dependencies
+node_modules/
+
+# Packed plugins kept around for reference
+*.tgz
+
+# Runtime settings written next to the profile
+provider-limits.settings.json
+
+# Local noise
+.DS_Store
+*.log
+*.tmp

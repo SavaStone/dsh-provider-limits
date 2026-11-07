@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Provider Limits",
+    "description": "Shows the active provider's remaining limits inline — a credit balance or quota windows with coloured bars — as a Limits action in the sidebar footer and in the settings panel."
+  }
+}

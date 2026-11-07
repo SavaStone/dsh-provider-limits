@@ -1,0 +1,68 @@
+{
+  "name": "dsh-provider-limits",
+  "version": "0.4.0",
+  "description": "Remaining provider limits in the DSH sidebar footer: credit balance, quota bars or percentages, and a one-click request for unsupported providers.",
+  "type": "module",
+  "license": "MIT",
+  "author": "SavaStone (https://github.com/SavaStone)",
+  "homepage": "https://github.com/SavaStone/dsh-provider-limits#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SavaStone/dsh-provider-limits.git"
+  },
+  "bugs": {
+    "url": "https://github.com/SavaStone/dsh-provider-limits/issues"
+  },
+  "main": "index.js",
+  "exports": {
+    ".": {
+      "default": "./index.js"
+    },
+    "./client": {
+      "default": "./client.js"
+    },
+    "./icon": "./icon.svg",
+    "./locale/*.json": "./locale/*.json",
+    "./package.json": "./package.json"
+  },
+  "icon": "./icon.svg",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "test": "node test-host.mjs && node test-client.mjs",
+    "check": "node --check index.js && node --check client.js"
+  },
+  "dsh": {
+    "manifestVersion": 1,
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true
+    }
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "cordis.patch.yml",
+    "icon.svg",
+    "locale/*.json",
+    "README.md"
+  ],
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "openrouter",
+    "opencode",
+    "credits",
+    "limits",
+    "balance",
+    "quota"
+  ],
+  "peerDependencies": {
+    "@deepseek-ai/cordis": "^4.0.5"
+  }
+}
