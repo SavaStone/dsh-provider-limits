@@ -9,6 +9,10 @@ It supports **OpenRouter** (credit balance) and **OpenCode Go** (quota windows),
 
 Version 0.4.0 · MIT · DSH 0.2.2 or newer.
 
+![The Limits readout in the sidebar footer, shown as bars with remaining percentages, bars with used percentages, and percentages only](docs/screenshots/display-modes.png)
+
+*The same readout in its three display modes: bars with the share left, bars with the share used, and percentages only.*
+
 ## What you get
 
 - **A `Limits` button in the sidebar footer**, directly above the `Signed in to …` account row. Click it and the current readout appears right above the button; click again and it goes away.
@@ -24,6 +28,10 @@ Version 0.4.0 · MIT · DSH 0.2.2 or newer.
 ## Settings
 
 There are two settings. Both live in **Settings → General**, together with the rest of the app's preferences, and both apply to the whole app, not to one provider. They are saved immediately and survive restarts.
+
+![The Settings → General page with the plugin's Limits row, Limit display and Percentage shown controls highlighted](docs/screenshots/settings.png)
+
+*Both controls live on Settings → General; the plugin's rows are highlighted.*
 
 ### Limit display
 
@@ -120,6 +128,10 @@ If the chat you are looking at uses a provider this plugin does not support yet,
 Pressing it asks for confirmation first. The confirmation explains that Creator mode will open with an English prompt already filled in — and that **nothing is sent automatically**: the prompt becomes a draft, and you press Send yourself. The prompt asks the agent to research the provider's balance or quota API, add the provider to the plugin, update the docs and tests, run the tests, and finally ask whether to commit and push the update.
 
 In the web build the prompt opens in a new browser tab. In the desktop app it opens as a new session in the same window. If Creator mode cannot be opened, the prompt is copied to the clipboard instead; if that fails too, the card offers **Try again**.
+
+![Left: the card shown for an unsupported provider, with the Ask DeepSeek button highlighted. Right: the confirmation card, with Open Creator mode highlighted](docs/screenshots/creator-flow.png)
+
+*Left: the card shown for an unsupported provider. Right: the confirmation before Creator mode opens. The prompt is only drafted — you still press Send yourself.*
 
 ## Troubleshooting
 
